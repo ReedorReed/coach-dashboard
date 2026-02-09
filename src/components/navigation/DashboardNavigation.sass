@@ -1,0 +1,28 @@
+.navigation
+    display: flex
+    gap: 1.5rem
+    margin-bottom: 2rem
+
+    &__link
+        display: flex
+        justify-content: center
+        align-items: center
+        background: #fff
+        padding: 1rem 2rem
+        border-radius: 12px
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+        border: 1px solid #e2e8f0
+        text-decoration: none
+        color: #64748b
+        font-weight: 500
+        transition: all 0.2s ease
+
+        &:hover
+            cursor: pointer
+            background-color: #f8fafc
+            border-color: #cbd5e1
+
+        &--active
+            border-left: 4px solid #4f46e5
+            color: #1e293b
+            background-color: #fff

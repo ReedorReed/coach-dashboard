@@ -1,0 +1,33 @@
+.progress-ring
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+
+    &__svg
+        transform: rotate(-90deg)
+
+    &__circle
+        fill: transparent
+        stroke-width: 8
+        stroke: #e2e8f0
+
+        &--fill
+            stroke: #10b981
+            stroke-linecap: round
+            transition: stroke-dashoffset 0.5s ease-in-out
+
+    &__percentage
+        position: absolute
+        font-size: 1.25rem
+        font-weight: 700
+        color: #1e293b
+        left: 50%
+        transform: translate(-40%, -60%)
+
+    &__label
+        margin-top: 1rem
+        font-size: 0.875rem
+        color: #64748b
+        font-weight: 500

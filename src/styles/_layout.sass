@@ -1,0 +1,28 @@
+@use 'resets'
+
+.dashboard
+    padding: 2rem
+    background-color: #f8fafc
+    min-height: 100dvh
+
+    &__header
+        display: flex
+        flex-direction: column
+        gap: 0.8rem
+        margin-bottom: 2.2rem
+
+        &-title
+            font-size: 2rem
+            color: #1e293b
+
+        &-subtitle
+            color: #64748b
+
+    &__lead-sales-content-leads
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap: 1.5rem
+        margin-top: 1.5rem
+
+        @media (max-width: 1024px)
+            grid-template-columns: 1fr

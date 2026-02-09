@@ -1,0 +1,35 @@
+.stats-overview
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+    gap: 1.5rem
+    margin-bottom: 2rem
+
+    &__card
+        background: #fff
+        padding: 1.5rem
+        border-radius: 16px
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1)
+        border: 1px solid #e2e8f0
+
+        &--highlight
+            border-left: 4px solid #4f46e5
+
+        &--alert
+            background-color: #fffbeb
+            border: 1px solid #fde68a
+        
+        &-label
+            display: flex
+            font-size: 0.875rem
+            color: #64748b
+            margin-bottom: 0.5rem
+            gap: 10px
+            text-align: center
+        
+        &-change
+            font-size: 13px
+
+        &-value
+            font-size: 2.2rem
+            font-weight: 700
+            color: #1e293b

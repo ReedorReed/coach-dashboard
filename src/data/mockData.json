@@ -1,0 +1,72 @@
+{
+	"coach": {
+		"name": "Louise",
+		"programName": "Empower Life Coaching"
+	},
+	"stats": [
+		{
+			"id": 1,
+			"label": "Active Clients",
+			"value": "42",
+			"change": "+4 this month",
+			"type": "active_clients"
+		},
+		{
+			"id": 2,
+			"label": "New Leads (Feb)",
+			"value": "12",
+			"change": "+15% vs last month",
+			"type": "leads"
+		},
+		{
+			"id": 3,
+			"label": "Revenue (Feb)",
+			"value": "45.200 kr.",
+			"change": "On track",
+			"type": "revenue"
+		}
+	],
+	"salesInsight": {
+		"conversionRate": 24,
+		"upcomingCalls": [
+			{
+				"id": 101,
+				"clientName": "Morten Jensen",
+				"time": "14:30",
+				"type": "Discovery Call",
+				"status": "Warm"
+			},
+			{
+				"id": 102,
+				"clientName": "Sofie Nielsen",
+				"time": "16:00",
+				"type": "Clarity Session",
+				"status": "Follow-up"
+			},
+			{
+				"id": 103,
+				"clientName": "Lars Andersen",
+				"time": "Tomorrow: 09:00",
+				"type": "Discovery Call",
+				"status": "Cold"
+			}
+		]
+	},
+	"recentLeads": [
+		{ "name": "Mette K.", "source": "Instagram", "date": "2 hours ago" },
+		{ "name": "Kasper L.", "source": "Facebook Ad", "date": "5 hours ago" },
+		{ "name": "Pernille S.", "source": "Referral", "date": "Yesterday" }
+	],
+	"clientAlerts": [
+		{
+			"id": 1,
+			"message": "3 clients missed their weekly reflection",
+			"severity": "high"
+		},
+		{
+			"id": 2,
+			"message": "2 journals waiting for feedback",
+			"severity": "medium"
+		}
+	]
+}

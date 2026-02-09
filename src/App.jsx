@@ -1,5 +1,12 @@
+import DashboardComponent from './pages/DashboardComponent';
+import './styles/main.sass';
+
 function App() {
-	return <></>;
+	return (
+		<>
+			<DashboardComponent />
+		</>
+	);
 }
 
 export default App;
