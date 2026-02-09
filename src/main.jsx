@@ -1,16 +1,16 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App.jsx';
 import LeadsSalesInsight from './pages/leadsSalesInsight.jsx';
 import './styles/main.sass';
 
 createRoot(document.getElementById('root')).render(
 	<StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename="/coach-dashboard">
 			<Routes>
-				<Route path="/coach-dashboard/" element={<App />} />
-				<Route path="/coach-dashboard/leads" element={<LeadsSalesInsight />} />
+				<Route path="/" element={<App />} />
+				<Route path="/leads" element={<LeadsSalesInsight />} />
 			</Routes>
 		</BrowserRouter>
 	</StrictMode>
