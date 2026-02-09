@@ -1,16 +1,82 @@
-# React + Vite
+# Coaching Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, React-based dashboard designed for Coaches to track business performance, manage leads, and oversee client progress.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Performance Overview:** Track Active Clients, Monthly Revenue, and Lead generation stats at a glance.
+- **Sales & Lead Insights:** Detailed views for upcoming discovery calls, clarity sessions, and recent lead sources.
+- **Client Alerts:** Intelligent notifications for client accountability (e.g., missed reflections, journal entries pending feedback).
+- **Responsive Design:** Optimized layout that adapts for desktop and tablet views using CSS Grid and Flexbox.
+- **Data Integration:** Built with a scalable architecture using JSON mock data to simulate real-world API responses.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React
+- **Routing:** React Router
+- **Styling:** Sass (Indented Syntax) using BEM naming convention.
+- **Icons:** React Icons (FontAwesome, IcoMoon)
+- **Build Tool:** Vite
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project follows a modular, component-based directory structure where styles live alongside their specific logic:
+
+```text
+src/
+├── components/           # UI Components
+│   ├── coachInsight/     # Alert components
+│   ├── navigation/       # Main navigation logic
+│   ├── salesCalls/       # Sales calls list styling & logic
+│   └── ...
+├── pages/                # Page Views
+│   ├── DashboardComponent.jsx   # Overview Page
+│   └── leadsSalesInsight.jsx    # Detailed Leads Page
+├── styles/               # Global Styles
+│   ├── _layout.sass      # Main grid layouts
+│   ├── _resets.sass      # CSS resets
+│   └── main.sass         # Style entry point
+└── data/
+    └── mockData.json     # Simulation data for the dashboard
+
+```
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ReedorReed/coach-dashboard.git
+cd coach-dashboard-project
+```
+
+2. Install dependencies:
+
+```bash
+
+npm install
+
+```
+
+3. Run the development server:
+
+```bash
+   npm run dev
+
+```
+
+4. Open in browser:
+Navigate to the port shown in your terminal.
+
+## Styling Methodology
+
+This project uses Sass with the BEM (Block Element Modifier) methodology to ensure styles are modular and maintainable.
+
+- Global layout logic is handled in 
+    \_layout.sass.
+- Component-specific styles are located in their respective folders (e.g., SalesCalls.sass).
+
+## Future Improvements
+
+- Implement dark mode toggle.
+- Add interactive charts for revenue history.
