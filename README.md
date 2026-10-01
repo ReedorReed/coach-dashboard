@@ -47,7 +47,7 @@ src/
 
 ```bash
 git clone https://github.com/ReedorReed/coach-dashboard.git
-cd coach-dashboard-project
+cd coach-dashboard
 ```
 
 2. Install dependencies:
